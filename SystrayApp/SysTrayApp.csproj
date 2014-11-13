@@ -47,7 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calendar.cs" />
+    <Compile Include="Meeting.cs" />
     <Compile Include="CalendarData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace SysTrayApp
 {
-    class Calendar
+    class Meeting
     {
         //calendar properties we care about
+        public string id;
         public string subject;
         public string startTime;
         public string endTime;

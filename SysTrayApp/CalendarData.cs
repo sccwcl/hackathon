@@ -9,28 +9,38 @@ namespace SysTrayApp
 {
     class CalendarData
     {
-        /// <summary>
-        /// get list of meetings on calendar
-        /// </summary>
-        public void GetCalendarMeetings()
+        public List<Meeting> GetAlerts(DateTime start, DateTime end)
         {
+            return GetCalendarMeetings(start, end);
+        }
+
+        /// <summary>
+        /// get list of meetings on calendar that will start in next 30 min
+        /// </summary>
+        private List<Meeting> GetCalendarMeetings(DateTime start, DateTime end)
+        {
+            List<Meeting> meetingList = new List<Meeting>();
+
             Application app = new Microsoft.Office.Interop.Outlook.Application();
             NameSpace session = app.Session;
             Stores stores = session.Stores;
             Folder calFolder =
             app.Session.GetDefaultFolder(OlDefaultFolders.olFolderCalendar) as Folder;
-            DateTime start = DateTime.Now;
-            DateTime end = start.AddDays(1);
             Items rangeAppts = GetAppointmentsInRange(calFolder, start, end);
             if (rangeAppts != null)
-            {
+            {                
                 foreach (AppointmentItem appt in rangeAppts)
                 {
-                    string subject =  appt.Subject;
-                    string startTime = appt.Start.ToString("yyyy:mm:dd hh:mm:ss");
+                    Meeting meet = new Meeting(); 
+                    meet.subject =  appt.Subject;
+                    meet.id = appt.GlobalAppointmentID;
+                    meet.startTime = appt.Start.ToString("yyyy:mm:dd hh:mm:ss");
+                    meet.endTime = appt.End.ToString("yyyy:mm:dd hh:mm:ss");
+                    meetingList.Add(meet);
                 }
             }
 
+            return meetingList;
         }
 
         /// <summary>
@@ -45,7 +55,7 @@ namespace SysTrayApp
         {
             string filter = "[Start] >= '"
                 + startTime.ToString("g")
-                + "' AND [End] <= '"
+                + "' AND [Start] <= '"
                 + endTime.ToString("g") + "'";
             try
             {
@@ -55,6 +65,7 @@ namespace SysTrayApp
                 Items restrictItems = calItems.Restrict(filter);
                 if (restrictItems.Count > 0)
                 {
+                    
                     return restrictItems;
                 }
                 else

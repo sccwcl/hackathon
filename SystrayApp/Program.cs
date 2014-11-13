@@ -15,7 +15,9 @@ namespace SysTrayApp
         static void Main()
         {
             CalendarData d = new CalendarData();
-            d.GetCalendarMeetings();
+            DateTime start = DateTime.Now;
+            DateTime end = start.AddDays(5);
+            List<Meeting> result = d.GetAlerts(start, end);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
