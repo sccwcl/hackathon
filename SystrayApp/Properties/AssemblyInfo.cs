@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SystrayApp")]
+[assembly: AssemblyTitle("SysTrayApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("SystrayApp")]
+[assembly: AssemblyProduct("SysTraiApp")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2872cdea-ffdd-4b2b-b171-5b89ab468650")]
+[assembly: Guid("acf26acc-402b-4c4e-9e0d-8f168a543824")]
 
 // Version information for an assembly consists of the following four values:
 //

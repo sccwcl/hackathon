@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SystrayApp
+namespace SysTrayApp
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace SystrayApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SysTrayApp());
+            Application.Run(new Form1());
         }
     }
 }

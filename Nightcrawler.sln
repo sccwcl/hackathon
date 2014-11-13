@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nightcrawler", "Nightcrawler\Nightcrawler.csproj", "{320B50B2-4625-43D1-AB6D-C969C6EA9440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysTrayApp", "SysTraiApp\SysTrayApp.csproj", "{42706980-92C8-499E-BF3A-D92666503394}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysTrayApp", "SysTrayApp\SysTrayApp.csproj", "{42706980-92C8-499E-BF3A-D92666503394}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
