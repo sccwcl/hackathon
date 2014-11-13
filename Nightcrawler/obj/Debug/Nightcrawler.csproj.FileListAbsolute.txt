@@ -1,0 +1,7 @@
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\bin\Debug\Nightcrawler.exe.config
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\bin\Debug\Nightcrawler.exe
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\bin\Debug\Nightcrawler.pdb
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\obj\Debug\Nightcrawler.ProjectInstaller.resources
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\obj\Debug\Nightcrawler.csproj.GenerateResource.Cache
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\obj\Debug\Nightcrawler.exe
+C:\Users\nakul_anil_ingley\Documents\Visual Studio 2013\Projects\Nightcrawler\Nightcrawler\obj\Debug\Nightcrawler.pdb
