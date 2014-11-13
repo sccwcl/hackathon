@@ -1,0 +1,9 @@
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\bin\Debug\SysTraiApp.exe.config
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\bin\Debug\SysTraiApp.exe
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\bin\Debug\SysTraiApp.pdb
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTraiApp.Properties.Resources.resources
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTraiApp.exe
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTraiApp.pdb
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTrayApp.csprojResolveAssemblyReference.cache
+C:\Users\angela_hong1\Desktop\hackathon\SysTraiApp\obj\Debug\SysTraiApp.Form1.resources

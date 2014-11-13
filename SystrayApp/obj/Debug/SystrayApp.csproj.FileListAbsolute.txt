@@ -1,0 +1,9 @@
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\bin\Debug\SystrayApp.exe.config
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\bin\Debug\SystrayApp.exe
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\bin\Debug\SystrayApp.pdb
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.csprojResolveAssemblyReference.cache
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.SysTrayApp.resources
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.Properties.Resources.resources
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.csproj.GenerateResource.Cache
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.exe
+C:\Users\angela_hong1\Desktop\hackathon\SystrayApp\obj\Debug\SystrayApp.pdb
