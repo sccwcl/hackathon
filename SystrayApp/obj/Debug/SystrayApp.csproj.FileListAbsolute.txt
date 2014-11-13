@@ -17,3 +17,12 @@ C:\Users\angela_hong1\Desktop\hackathon\SysTrayApp\obj\Debug\SysTrayApp.Properti
 C:\Users\angela_hong1\Desktop\hackathon\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
 C:\Users\angela_hong1\Desktop\hackathon\SysTrayApp\obj\Debug\SysTrayApp.exe
 C:\Users\angela_hong1\Desktop\hackathon\SysTrayApp\obj\Debug\SysTrayApp.pdb
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\bin\Debug\SysTrayApp.exe.config
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\bin\Debug\SysTrayApp.exe
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\bin\Debug\SysTrayApp.pdb
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.csprojResolveAssemblyReference.cache
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.Form1.resources
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.Properties.Resources.resources
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.exe
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.pdb

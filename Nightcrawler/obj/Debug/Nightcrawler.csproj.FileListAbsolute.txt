@@ -13,3 +13,11 @@ C:\Users\angela_hong1\Desktop\hackathon\Nightcrawler\bin\Debug\Nightcrawler.pdb
 C:\Users\angela_hong1\Desktop\hackathon\Nightcrawler\obj\Debug\Nightcrawler.csprojResolveAssemblyReference.cache
 C:\Users\angela_hong1\Desktop\hackathon\Nightcrawler\obj\Debug\Nightcrawler.ProjectInstaller.resources
 C:\Users\angela_hong1\Desktop\hackathon\Nightcrawler\obj\Debug\Nightcrawler.csproj.GenerateResource.Cache
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\bin\Debug\Nightcrawler.exe.config
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\obj\Debug\Nightcrawler.exe
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\obj\Debug\Nightcrawler.pdb
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\bin\Debug\Nightcrawler.exe
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\bin\Debug\Nightcrawler.pdb
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\obj\Debug\Nightcrawler.csprojResolveAssemblyReference.cache
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\obj\Debug\Nightcrawler.ProjectInstaller.resources
+C:\Dev\Nightcrawler\hackathon2\Nightcrawler\obj\Debug\Nightcrawler.csproj.GenerateResource.Cache

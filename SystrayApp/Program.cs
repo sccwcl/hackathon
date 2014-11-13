@@ -14,9 +14,12 @@ namespace SysTrayApp
         [STAThread]
         static void Main()
         {
+            CalendarData d = new CalendarData();
+            d.GetCalendarMeetings();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+            
         }
     }
 }
