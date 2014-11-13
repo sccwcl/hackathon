@@ -26,3 +26,13 @@ C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.Properties.Resour
 C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
 C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.exe
 C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.pdb
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\bin\Debug\SysTrayApp.exe.config
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.exe
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.pdb
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\bin\Debug\SysTrayApp.exe
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\bin\Debug\SysTrayApp.pdb
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.csprojResolveAssemblyReference.cache
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.Form1.resources
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.Properties.Resources.resources
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.VotingForm.resources
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache

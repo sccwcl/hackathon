@@ -14,7 +14,7 @@ namespace SysTrayApp
     {
         private NotifyIcon sysTrayIcon;
         private ContextMenu sysTrayMenu;
-        private VotingEvent votingEvent = new VotingEvent();
+        
         public Form1()
         {
             InitializeComponent();
@@ -46,34 +46,10 @@ namespace SysTrayApp
 
         private void OnEnable(object sender, EventArgs e)
         {
-            Visible = true;
+            VotingForm newForm = new VotingForm();
+            newForm.Visible = true;
         }
 
-        private void Btn_UpVote_Click(object sender, EventArgs e)
-        {
-            Btn_UpVote.Enabled = false;
-            Btn_DownVote.Enabled = true;
-            ComboBox_Reasons.Enabled = false ;
-            votingEvent.Vote = true;
-            
-        }
-
-        private void Btn_DownVote_Click(object sender, EventArgs e)
-        {
-            Btn_DownVote.Enabled = false;
-            Btn_UpVote.Enabled = true;
-            ComboBox_Reasons.Enabled = true;
-            votingEvent.Vote = false;
-        }
-
-        private void Btn_exit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Btn_Submit_Click(object sender, EventArgs e)
-        {
-            Visible = false;
-        }
+        
     }
 }
