@@ -24,18 +24,24 @@ namespace SysTrayApp
             Application app = new Microsoft.Office.Interop.Outlook.Application();
             NameSpace session = app.Session;
             Stores stores = session.Stores;
+
+            string user = GetCurrentUserName(app);
+            string email = GetCurrentUserEmail(app);
+
             Folder calFolder =
             app.Session.GetDefaultFolder(OlDefaultFolders.olFolderCalendar) as Folder;
             Items rangeAppts = GetAppointmentsInRange(calFolder, start, end);
             if (rangeAppts != null)
-            {                
+            {
                 foreach (AppointmentItem appt in rangeAppts)
                 {
-                    Meeting meet = new Meeting(); 
-                    meet.subject =  appt.Subject;
+                    Meeting meet = new Meeting();
+                    meet.subject = appt.Subject;
                     meet.id = appt.GlobalAppointmentID;
                     meet.startTime = appt.Start.ToString("yyyy:mm:dd hh:mm:ss");
                     meet.endTime = appt.End.ToString("yyyy:mm:dd hh:mm:ss");
+                    meet.owner = GetMeetingOrganizer(appt).Name;
+
                     meetingList.Add(meet);
                 }
             }
@@ -65,7 +71,7 @@ namespace SysTrayApp
                 Items restrictItems = calItems.Restrict(filter);
                 if (restrictItems.Count > 0)
                 {
-                    
+
                     return restrictItems;
                 }
                 else
@@ -75,5 +81,67 @@ namespace SysTrayApp
             }
             catch { return null; }
         }
+
+        private AddressEntry GetMeetingOrganizer(AppointmentItem appt)
+        {
+            if (appt == null)
+            {
+                throw new ArgumentNullException();
+            }
+            string PR_SENT_REPRESENTING_ENTRYID =
+                @"http://schemas.microsoft.com/mapi/proptag/0x00410102";
+            string organizerEntryID =
+                appt.PropertyAccessor.BinaryToString(
+                    appt.PropertyAccessor.GetProperty(
+                    PR_SENT_REPRESENTING_ENTRYID));
+            AddressEntry organizer =
+                appt.Session.
+                GetAddressEntryFromID(organizerEntryID);
+            if (organizer != null)
+            {
+                return organizer;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public string GetCurrentUserName(Application appt)
+        {
+            AddressEntry addrEntry =
+                appt.Session.CurrentUser.AddressEntry;
+            if (addrEntry.Type == "EX")
+            {
+                ExchangeUser currentUser =
+                    appt.Session.CurrentUser.
+                    AddressEntry.GetExchangeUser();
+                if (currentUser != null)
+                {
+                    return currentUser.Name;
+                }
+            }
+
+            return string.Empty;
+        }
+
+        public string GetCurrentUserEmail(Application appt)
+        {
+            AddressEntry addrEntry =
+                appt.Session.CurrentUser.AddressEntry;
+            if (addrEntry.Type == "EX")
+            {
+                ExchangeUser currentUser =
+                    appt.Session.CurrentUser.
+                    AddressEntry.GetExchangeUser();
+                if (currentUser != null)
+                {
+                    return currentUser.PrimarySmtpAddress;
+                }
+            }
+
+            return string.Empty;
+        }
+
     }
 }
