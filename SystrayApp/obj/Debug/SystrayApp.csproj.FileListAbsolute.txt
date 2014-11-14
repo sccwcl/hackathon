@@ -46,3 +46,6 @@ C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon5pm\SysTrayApp\obj\Deb
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon5pm\SysTrayApp\obj\Debug\SysTrayApp.Properties.Resources.resources
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon5pm\SysTrayApp\obj\Debug\SysTrayApp.VotingForm.resources
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon5pm\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon8pm\SysTrayApp\bin\Debug\SysTrayApp.exe.config
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon8pm\SysTrayApp\obj\Debug\SysTrayApp.exe
+C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon8pm\SysTrayApp\obj\Debug\SysTrayApp.pdb

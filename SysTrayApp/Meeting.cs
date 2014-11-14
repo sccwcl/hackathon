@@ -6,13 +6,34 @@ using System.Threading.Tasks;
 
 namespace SysTrayApp
 {
-    public class Meeting
+    class Meeting
     {
         //calendar properties we care about
+        /// <summary>
+        /// Unique GUID of the meeting 
+        /// </summary>
         public string id;
+        /// <summary>
+        /// meeting owner
+        /// </summary>
+        public string owner;
+        /// <summary>
+        /// meeting subject
+        /// </summary>
         public string subject;
+        /// <summary>
+        /// start time of meeting
+        /// </summary>
         public DateTime startTime;
+        /// <summary>
+        /// end time of meeting
+        /// </summary>
         public DateTime endTime;
+
         public DateTime RatingTime;
+        /// <summary>
+        /// list of email IDs of meeting attendees
+        /// </summary>
+        public List<string> attendees = new List<string>();
     }
 }
