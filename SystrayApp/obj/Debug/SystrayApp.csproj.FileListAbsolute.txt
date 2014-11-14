@@ -36,3 +36,4 @@ C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Deb
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.Properties.Resources.resources
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.VotingForm.resources
 C:\Users\angela_hong1\Desktop\HackthonSourceCode\hackathon4pm\SysTrayApp\obj\Debug\SysTrayApp.csproj.GenerateResource.Cache
+C:\Dev\Nightcrawler\hackathon2\SysTrayApp\obj\Debug\SysTrayApp.VotingForm.resources

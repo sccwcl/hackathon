@@ -41,7 +41,15 @@ namespace SysTrayApp
                     meet.startTime = appt.Start.ToString("yyyy:mm:dd hh:mm:ss");
                     meet.endTime = appt.End.ToString("yyyy:mm:dd hh:mm:ss");
                     meet.owner = GetMeetingOrganizer(appt).Name;
-
+                    Recipients rp = GetMeetingRecipients(appt);
+                    foreach (Recipient recip in rp)
+                    {
+                        PropertyAccessor pa = recip.PropertyAccessor;
+                        const string PR_SMTP_ADDRESS = "http://schemas.microsoft.com/mapi/proptag/0x39FE001E";
+                        string smtpAddress =
+                            pa.GetProperty(PR_SMTP_ADDRESS).ToString();
+                        meet.attendees.Add(smtpAddress);
+                    }
                     meetingList.Add(meet);
                 }
             }
@@ -143,5 +151,31 @@ namespace SysTrayApp
             return string.Empty;
         }
 
+        private Recipients GetMeetingRecipients(AppointmentItem appt)
+        {
+            if (appt == null)
+            {
+                throw new ArgumentNullException();
+            }
+            
+            Recipients recips = appt.Recipients;
+
+            const string PR_SMTP_ADDRESS =
+        "http://schemas.microsoft.com/mapi/proptag/0x39FE001E";
+            //foreach (Recipient recip in recips)
+            //{
+            //    PropertyAccessor pa = recip.PropertyAccessor;
+            //    string smtpAddress =
+            //        pa.GetProperty(PR_SMTP_ADDRESS).ToString();
+            //}
+            if (recips != null)
+            {
+                return recips;
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }
