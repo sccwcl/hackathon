@@ -43,6 +43,7 @@ namespace SysTrayApp
             
             votingEvent.Vote = true;
             Visible = false;
+            Application.Exit();
 
         }
 
@@ -61,11 +62,13 @@ namespace SysTrayApp
         private void Btn_Ok_Click(object sender, EventArgs e)
         {
             Visible = false;
+            Application.Exit();
         }
 
         private void lbl_NotAttending_Click(object sender, EventArgs e)
         {
             Visible = false;
+            Application.Exit();
         }
 
         private void lbl_NotAttending_MouseMove(object sender, MouseEventArgs e)

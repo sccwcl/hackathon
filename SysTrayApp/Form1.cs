@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
@@ -56,7 +57,7 @@ namespace SysTrayApp
                 Random random = new Random();
                 int randomNumer = random.Next(1, 10) * (-1);
                 DateTime ddt = m.endTime;
-                DateTime dt = m.endTime.AddMinutes(-40);
+                DateTime dt = m.endTime.AddMinutes(-59);
                 m.RatingTime = dt;
             }
                 //foreach (Meeting m in meetings)
@@ -68,8 +69,8 @@ namespace SysTrayApp
                 //}
             meetings = meetings.OrderBy(o => o.RatingTime).ToList();
 
-            CheckAlerts();
-            Task.Factory.StartNew(() => CheckAlerts());
+            var t = new Thread(CheckAlerts);
+            t.Start();
 
             //Start the timer;
             System.Timers.Timer calendarCheckTimer = new System.Timers.Timer();
@@ -110,8 +111,7 @@ namespace SysTrayApp
  
         private static void PopUpRatingWindow()
         {
-            VotingForm newForm = new VotingForm();
-            newForm.Visible = true;
+            Application.Run(new VotingForm());
         }
 
  
@@ -124,12 +124,12 @@ namespace SysTrayApp
                     
                     Meeting m = meetings[0];
                     DateTime dt = m.RatingTime;
-                    if(DateTime.Compare(DateTime.Now,dt) < 0)
-                    {         
+                    if(DateTime.Compare(DateTime.Now,dt) > 0)
+                    {
+                        Application.Run(new VotingForm());
+                        //Task.Factory.StartNew(() => PopUpRatingWindow());
                         
-                        PopUpRatingWindow();
                         meetings.Remove(meetings[0]);
-
                     }
                 }
             }
