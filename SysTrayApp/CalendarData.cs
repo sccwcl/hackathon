@@ -15,8 +15,11 @@ namespace SysTrayApp
         }
 
         /// <summary>
-        /// get list of meetings on calendar that will start in next 30 min
+        /// get list of meetings on calendar that will start within start-end range
         /// </summary>
+        /// <param name="start">start time</param>
+        /// <param name="end">end time</param>
+        /// <returns>list of Meeting objects</returns>
         private List<Meeting> GetCalendarMeetings(DateTime start, DateTime end)
         {
             List<Meeting> meetingList = new List<Meeting>();
@@ -60,9 +63,9 @@ namespace SysTrayApp
         /// <summary>
         /// Get recurring appointments in date range.
         /// </summary>
-        /// <param name="folder"></param>
-        /// <param name="startTime"></param>
-        /// <param name="endTime"></param>
+        /// <param name="folder">Default appointments folder</param>
+        /// <param name="startTime">start time</param>
+        /// <param name="endTime">end time</param>
         /// <returns>Outlook.Items</returns>
         private Items GetAppointmentsInRange(
           Folder folder, DateTime startTime, DateTime endTime)
@@ -79,7 +82,6 @@ namespace SysTrayApp
                 Items restrictItems = calItems.Restrict(filter);
                 if (restrictItems.Count > 0)
                 {
-
                     return restrictItems;
                 }
                 else
@@ -90,6 +92,11 @@ namespace SysTrayApp
             catch { return null; }
         }
 
+        /// <summary>
+        /// get meeting organizer for given meeting
+        /// </summary>
+        /// <param name="appt">appointment item</param>
+        /// <returns>address entry of meeting organizer</returns>
         private AddressEntry GetMeetingOrganizer(AppointmentItem appt)
         {
             if (appt == null)
@@ -115,6 +122,11 @@ namespace SysTrayApp
             }
         }
 
+        /// <summary>
+        /// get current user's username
+        /// </summary>
+        /// <param name="appt">outlook application object</param>
+        /// <returns>username as string</returns>
         public string GetCurrentUserName(Application appt)
         {
             AddressEntry addrEntry =
@@ -133,6 +145,11 @@ namespace SysTrayApp
             return string.Empty;
         }
 
+        /// <summary>
+        /// get current user's email ID
+        /// </summary>
+        /// <param name="appt">outlook appointment object</param>
+        /// <returns>current user's email as string</returns>
         public string GetCurrentUserEmail(Application appt)
         {
             AddressEntry addrEntry =
@@ -151,6 +168,11 @@ namespace SysTrayApp
             return string.Empty;
         }
 
+        /// <summary>
+        /// get collection of meeting recepients for given meeting
+        /// </summary>
+        /// <param name="appt">outlook appointment item</param>
+        /// <returns>collection of meeting recepients</returns>
         private Recipients GetMeetingRecipients(AppointmentItem appt)
         {
             if (appt == null)
