@@ -27,10 +27,14 @@ namespace SysTrayApp
             this.Btn_DownVote.TabStop = false;
             this.Btn_DownVote.FlatStyle = FlatStyle.Flat;
             this.Btn_DownVote.FlatAppearance.BorderSize = 0;
+
+            
             label3.Visible = false;
             ComboBox_Reasons.Visible = false;
             Btn_Ok.Visible = false;
             lbl_NotAttending.Visible = true;
+
+            //Lbl_MeetingName.Text = meeting.subject;
         }
 
         private void Btn_UpVote_Click(object sender, EventArgs e)

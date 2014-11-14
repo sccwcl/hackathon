@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 
 namespace SysTrayApp
@@ -14,14 +15,11 @@ namespace SysTrayApp
         [STAThread]
         static void Main()
         {
-            CalendarData d = new CalendarData();
-            DateTime start = DateTime.Now;
-            DateTime end = start.AddDays(5);
-            List<Meeting> result = d.GetAlerts(start, end);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-            
+            Application.Run(new Form1());          
         }
+
+        
     }
 }
